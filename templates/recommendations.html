@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles.css"> <!-- Link to external CSS for styling -->
+    <title>Recommendations</title>
+</head>
+<body>
+    <h1>Recommendations</h1>
+
+    <h2>Interacted Content</h2>
+    {% if interacted_content %}
+        <ul>
+        {% for content in interacted_content %}
+            <li>
+                <strong>{{ content.title }}</strong><br>
+                Category: {{ content.category }}<br>
+                Popularity: {{ content.popularity }}<br>
+                Source: {{ content.source }}
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No interacted content found.</p>
+    {% endif %}
+
+    <h2>Recommended Content</h2>
+    {% if recommended_content %}
+        <ul>
+        {% for content in recommended_content %}
+            <li>
+                <strong>{{ content.title }}</strong><br>
+                Category: {{ content.category }}<br>
+                Popularity: {{ content.popularity }}<br>
+                Source: {{ content.source }}
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No recommended content found.</p>
+    {% endif %}
+
+    <h2>Users to Follow</h2>
+    {% if users_to_follow %}
+        <ul>
+        {% for user in users_to_follow %}
+            <li>
+                <strong>{{ user.name }}</strong><br>
+                Interests: {{ user.interests }}<br>
+                Followers: {{ user.followers_count }} | Following: {{ user.following_names|join(", ") }}
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No users to follow found.</p>
+    {% endif %}
+
+    <br>
+    <a href="/">Back to Home</a>
+</body>
+</html>

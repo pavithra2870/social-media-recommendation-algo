@@ -1,0 +1,8 @@
+user_id,name,interests,followers_count,following,activity_level
+1,John Doe,technology;science,150,2;3;5,high
+2,Jane Smith,travel;photography,200,1;4,medium
+3,Emily Johnson,food;fashion,120,1;5,low
+4,Michael Brown,technology;travel,180,2;3,high
+5,Lisa White,science;photography,90,1;4,medium
+6,David Green,technology;fashion,60,3;5,low
+7,Susan Black,food;science,140,2;4,medium

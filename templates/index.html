@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Social Media Content Recommender with personalized suggestions based on interactions and preferences.">
+  <title>Social Media Content Recommender</title>
+  <link rel="stylesheet" href="static/styles.css"> <!-- Link to external CSS for styling -->
+</head>
+
+<body>
+  <header>
+    <h1>Social Media Content Recommender</h1>
+    <p>Get personalized content recommendations based on your preferences.</p>
+  </header>
+
+  <main>
+    <section class="recommendation-form">
+      <h2>Get Your Recommendations</h2>
+      <form action="/recommend" method="POST">
+        <div class="form-group">
+          <label for="user_id">User ID:</label>
+          <input type="number" id="user_id" name="user_id" required>
+        </div>
+
+        <div class="form-group">
+          <label for="algorithm">Recommendation Algorithm:</label>
+          <select id="algorithm" name="algorithm">
+            <option value="collaborative">Collaborative Filtering</option>
+            <option value="content-based">Content-Based Filtering</option>
+            <option value="hybrid">Hybrid Filtering</option>
+          </select>
+        </div>
+
+        <button type="submit" class="submit-btn">Get Recommendations</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Social Media Recommender. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+user_id,content_id,interaction_type
+1,1,viewed
+1,3,liked
+2,2,viewed
+2,4,liked
+3,5,viewed
+3,6,liked
+4,7,viewed
+4,8,liked
+5,9,viewed
+5,10,liked
