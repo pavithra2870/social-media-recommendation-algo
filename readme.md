@@ -1,3 +1,4 @@
+Slightly edited version of https://github.com/karan3691's https://github.com/karan3691/social-media-recommender. Thanks a lot!!
 # Social Media Content Recommender
 
 This project is a **Social Media Content Recommender** that provides personalized content recommendations for users based on their interactions, preferences, and browsing history. The recommendation system is built with several filtering techniques to optimize user engagement and suggest relevant content.
