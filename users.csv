@@ -6,3 +6,7 @@ user_id,name,interests,followers_count,following,activity_level
 5,Lisa White,science;photography,90,1;4,medium
 6,David Green,technology;fashion,60,3;5,low
 7,Susan Black,food;science,140,2;4,medium
+8,Pavithra,science;technology,0,1,low
+9,test,fashion,0,1,low
+10,test,food,0,1,low
+11,sadhu,science;self improvement;technology,0,1,low
